@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Invoice Magnetan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">IN</div><div><strong>Invoice Magnetan</strong><small>Pengelolaan penjualan</small></div></div>
+    <nav id="navigation">
+      <button class="nav-item active" data-page="dashboard">▦ <span>Dashboard</span></button>
+      <button class="nav-item" data-page="buat">＋ <span>Buat Invoice</span></button>
+      <button class="nav-item" data-page="invoice">▤ <span>Data Invoice</span></button>
+      <button class="nav-item" data-page="customer">♙ <span>Data Customer</span></button>
+      <button class="nav-item" data-page="produk">◇ <span>Data Produk</span></button>
+      <button class="nav-item" data-page="laporan">▥ <span>Laporan Penjualan</span></button>
+      <button class="nav-item" data-page="pengaturan">⚙ <span>Pengaturan</span></button>
+      <button class="nav-item" data-page="backup">⇧ <span>Backup & Restore</span></button>
+    </nav>
+    <div class="sidebar-foot"><span class="online-dot"></span> Data tersimpan di perangkat ini</div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Buka menu">☰</button><div><h1 id="pageTitle">Dashboard</h1><p id="pageSubtitle">Ringkasan usaha Anda hari ini</p></div><div class="topbar-date" id="todayLabel"></div></header>
+    <section id="pageContent" class="content"></section>
+    <footer class="app-footer">Invoice Offline <span>•</span> Data lokal di browser Anda</footer>
+  </main>
+</div>
+<div id="modalRoot"></div><div id="toastRoot" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
